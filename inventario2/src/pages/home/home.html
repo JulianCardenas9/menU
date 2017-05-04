@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+   
+
+       <ion-buttons star>
+      <button ion-button icon-only>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+
+   <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+   <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+<ion-list>
+  <ion-item  *ngFor="let dato of Datos">
+    <ion-thumbnail item-left>
+      <img src="{{dato.imagen}}">
+    </ion-thumbnail>
+    <h2> {{dato.first_name}}</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-right>View</button>
+  </ion-item>
+</ion-list>
+
+
+
+</ion-content>

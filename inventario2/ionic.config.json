@@ -1,0 +1,12 @@
+{
+  "name": "inventario2",
+  "app_id": "",
+  "v2": true,
+  "typescript": true, 
+   "proxies" :   [ 
+     { 
+       "path" :   "/restfull2" , 
+       "proxyUrl" :   "http://192.168.0.12:80/restfull2/" 
+     } 
+   ] 
+}
